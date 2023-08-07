@@ -39,21 +39,31 @@ Install dependencies
 ```
 Update .env file with your postgres database credentials
 
-### `npx ts-node src/create-db-schema.ts`
-Creates database.
+Create database.
+```bash
+  npx ts-node src/create-db-schema.ts
+```
 
-### `npx typeorm-ts-node-commonjs migration:run -d ./src/NewDataSource.ts`
-Creates database schema.
+Create database schema.
+```bash
+  npx typeorm-ts-node-commonjs migration:run -d ./src/NewDataSource.ts
+```
+
 
 
 ## Available Scripts
 
-### `npm start`
 Runs the app in the development mode.
+```bash
+  npm start
+```
 Start server on [http://localhost:5001]
 
-### `npm test`
+
 Runs the test suite
+```bash
+  npm test
+```
 
 
 ## Here is a brief overview of the API endpoints and functionalities:

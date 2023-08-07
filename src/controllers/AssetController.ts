@@ -116,12 +116,8 @@ export const addWatermarkToVideo = async (req: Request, res: Response) => {
           return res.status(404).json({ message: 'File not found.' });
         }
 
-        
         // Get the file path based on the stored file name
         const videoFile = path.join('uploads/videos', asset.fileName);
-        
-        console.log(videoFile);
-        // const assetId = asset.assetId;
         
         // Add the watermark to the video using ffmpeg
         const watermarkPath = path.join(__dirname, '../../src/cogart-logo.png'); 
